@@ -1,4 +1,11 @@
 package com.softedit.inventory.repository;
 
-public interface ItemCategoryRepository {
+import com.softedit.inventory.model.ItemCategory;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
+@Transactional(readOnly = true)
+public interface ItemCategoryRepository extends JpaRepository<ItemCategory, Long> {
 }
