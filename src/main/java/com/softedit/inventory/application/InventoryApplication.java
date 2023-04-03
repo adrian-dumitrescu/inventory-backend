@@ -1,4 +1,4 @@
-package com.softedit.inventory;
+package com.softedit.inventory.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
