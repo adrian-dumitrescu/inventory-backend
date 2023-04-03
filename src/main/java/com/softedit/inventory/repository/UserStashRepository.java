@@ -1,4 +1,12 @@
 package com.softedit.inventory.repository;
 
-public interface UserStashRepository {
+
+import com.softedit.inventory.model.UserStash;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
+@Transactional(readOnly = true)
+public interface UserStashRepository extends JpaRepository<UserStash, Long> {
 }
